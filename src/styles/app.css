@@ -1,0 +1,123 @@
+html {
+  box-sizing: border-box;
+  background-color: #BFEFFF;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  /*font: 100 14px 'Times New Roman';*/
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", 
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", 
+    "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container-fluid {
+  padding: 0px !important;
+  margin: 0px !important;
+}
+
+.list-app {
+  background-color: #BFEFFF;
+  font-size: calc(12px + 2vmin);
+}
+
+.add-item-textbox {
+  width: 100%;
+  font-size: 24px;
+  border: 2px solid white;
+}
+
+.add-item-button {
+  width: 100%;
+  font-size: 24px;
+  color: white;
+  background-color: #1784db;
+  border: 2px solid #1784db;
+}
+
+.remove-item-button {
+  width: 100%;
+  font-size: 16px;
+  color: white;
+  background-color: #CA3433;
+  border: 2px solid #CA3433;
+}
+
+.button-hidden {
+  display: none;
+}
+
+.empty-list-message {
+  padding-top: 10px;
+  text-align: center;
+}
+
+.todo-list {
+  padding: 10px 5px 5px 5px;
+}
+
+.todo-item {
+  color: #333;
+  background-color: rgba(255, 255, 255, .5);
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  list-style: none;
+  transition: background-color .2s ease-out;
+  text-decoration: none;
+}
+
+.completed-todo-item {
+  color: #333;
+  background-color: rgba(255, 255, 255, .5);
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  list-style: none;
+  transition: background-color .2s ease-out;
+  text-decoration: line-through;
+}
+
+.todo-item:active,
+.completed-todo-item:active {
+  background-color: lightblue;
+}
+
+
+.add-item-button:active {
+  background-color: #000080;
+  border: 2px solid #000080;
+  color: white;
+}
+
+.remove-item-button:active {
+  background-color: #7E191B;
+  border: 2px solid #7E191B;
+  color: white;
+}
+
+@media (hover: hover) {
+  .todo-item:hover,
+  .completed-todo-item:hover {
+    background-color: lightblue;
+  }
+
+  .add-item-button:hover {
+    background-color: #000080;
+    border: 2px solid #000080;
+    color: white;
+  }
+
+  .remove-item-button:hover {
+    background-color: #7E191B;
+    border: 2px solid #7E191B;
+    color: white;
+  }
+}
+
+button:focus { outline: none; }
